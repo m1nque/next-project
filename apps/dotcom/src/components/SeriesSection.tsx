@@ -5,6 +5,7 @@ interface SeriesArticle {
   author?: string
   imageUrl?: string
   excerpt?: string
+  href?: string
 }
 
 interface SeriesSectionProps {
