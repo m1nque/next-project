@@ -1,17 +1,19 @@
 {
-  "name": "my-app",
+  "name": "dotcom",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.31"
+    "next": "14.2.31",
+    "@repo/ui": "file:../../packages/ui"
   },
   "devDependencies": {
     "typescript": "^5",
