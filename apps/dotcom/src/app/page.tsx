@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@repo/ui";
 
 export default function Home() {
   return (
@@ -31,15 +30,15 @@ export default function Home() {
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Button variant="primary" size="lg">
+          <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-lg">
             Primary Button
-          </Button>
-          <Button variant="secondary" size="md">
+          </button>
+          <button className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700 text-base">
             Secondary Button
-          </Button>
-          <Button variant="outline" size="sm">
+          </button>
+          <button className="px-3 py-2 border border-gray-300 bg-white text-gray-700 rounded-md hover:bg-gray-50 text-sm">
             Outline Button
-          </Button>
+          </button>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
