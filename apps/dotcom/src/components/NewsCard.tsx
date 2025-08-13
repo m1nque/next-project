@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface NewsCardProps {
   title: string
@@ -7,6 +8,7 @@ interface NewsCardProps {
   readTime?: string
   isLarge?: boolean
   className?: string
+  href?: string
 }
 
 export default function NewsCard({ 
