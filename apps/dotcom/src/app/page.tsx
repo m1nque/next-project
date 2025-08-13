@@ -89,7 +89,7 @@ export default function Home() {
       excerpt: "중국의 석유화학 산업 급성장이 한국에 미치는 영향"
     },
     {
-      title: "닮은듯 다른 입시경쟁…中 '과기 굴기'·韓 '의대 추종'",
+      title: "닮은듯 다른 입시���쟁…中 '과기 굴기'·韓 '의대 추종'",
       author: "이덕환의 과학세상",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/1755053375946.jpg",
       excerpt: "한중 교육 시스템의 차이점과 과학기술 발전 전략"
@@ -115,6 +115,7 @@ export default function Home() {
                   readTime={news.readTime}
                   isLarge={index === 0}
                   className={index === 0 ? "md:col-span-2" : ""}
+                  href={news.href}
                 />
               ))}
             </NewsGrid>
