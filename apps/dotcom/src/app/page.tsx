@@ -15,10 +15,11 @@ export default function Home() {
       title: "매머드 털 가진 털북숭이 생쥐의 진실",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550641042658.jpg",
       category: "생물학",
-      readTime: "3분 읽기"
+      readTime: "3분 읽기",
+      href: "/article/mammoth-mice-truth"
     },
     {
-      title: "2억4700만년 전 파충류, 깃털 달린 공룡 증거일까",
+      title: "2억4700만년 ��� 파충류, 깃털 달린 공룡 증거일까",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550646922357.jpg",
       category: "고생물학",
       readTime: "4분 읽기"
@@ -84,7 +85,7 @@ export default function Home() {
       title: "'차이나 쇼크' 석유화학산업 구조조정, 정부의 책무",
       author: "이덕환 서강대학교 화학·과학커뮤니케이션 명예교수",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550457052462.jpg",
-      excerpt: "중국의 석유화학 산업 급성장이 한국에 미치는 영향"
+      excerpt: "중국의 석유화학 산업 ��성장이 한국에 미치는 영향"
     },
     {
       title: "닮은듯 다른 입시경쟁…中 '과기 굴기'·韓 '의대 추종'",
