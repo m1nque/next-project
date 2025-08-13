@@ -11,16 +11,17 @@ interface NewsCardProps {
   href?: string
 }
 
-export default function NewsCard({ 
-  title, 
-  imageUrl, 
-  category, 
-  readTime, 
+export default function NewsCard({
+  title,
+  imageUrl,
+  category,
+  readTime,
   isLarge = false,
-  className = '' 
+  className = '',
+  href
 }: NewsCardProps) {
-  return (
-    <article className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 ${className}`}>
+  const content = (
+    <>
       <div className={`relative ${isLarge ? 'aspect-[16/9]' : 'aspect-[4/3]'}`}>
         <Image
           src={imageUrl}
@@ -37,20 +38,36 @@ export default function NewsCard({
           </div>
         )}
       </div>
-      
+
       <div className="p-4">
         <h3 className={`font-medium text-gray-900 line-clamp-2 leading-relaxed ${
           isLarge ? 'text-lg mb-2' : 'text-sm mb-1'
         }`}>
           {title}
         </h3>
-        
+
         {readTime && (
           <p className="text-xs text-gray-500 mt-2">
             {readTime}
           </p>
         )}
       </div>
+    </>
+  )
+
+  if (href) {
+    return (
+      <Link href={href}>
+        <article className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer ${className}`}>
+          {content}
+        </article>
+      </Link>
+    )
+  }
+
+  return (
+    <article className={`bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 ${className}`}>
+      {content}
     </article>
   )
 }
