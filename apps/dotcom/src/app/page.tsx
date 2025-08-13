@@ -4,7 +4,13 @@ import SeriesSection from "../components/SeriesSection";
 import BottomNav from "../components/BottomNav";
 
 export default function Home() {
-  const featuredNews = [
+  const featuredNews: Array<{
+    title: string
+    imageUrl: string
+    category: string
+    readTime: string
+    href?: string
+  }> = [
     {
       title: "서머타임은 과연 과학적일까",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550697833486.png",
@@ -70,7 +76,7 @@ export default function Home() {
       title: "서머타임은 과연 과학적일까",
       author: "강석기의 과학카페",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550697833486.png",
-      excerpt: "일광절약시간제의 과학적 근거와 효과에 대한 분석"
+      excerpt: "일광절약시간제의 과학적 근거와 효과에 대한 ���석"
     },
     {
       title: "매머드 털 가진 털북숭이 생쥐의 진실",
@@ -89,7 +95,7 @@ export default function Home() {
       excerpt: "중국의 석유화학 산업 급성장이 한국에 미치는 영향"
     },
     {
-      title: "닮은듯 다른 입시���쟁…中 '과기 굴기'·韓 '의대 추종'",
+      title: "닮은듯 다른 입시경쟁…中 '과기 굴기'·韓 '의대 추종'",
       author: "이덕환의 과학세상",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/1755053375946.jpg",
       excerpt: "한중 교육 시스템의 차이점과 과학기술 발전 전략"
