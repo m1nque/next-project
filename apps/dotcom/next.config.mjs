@@ -3,10 +3,11 @@ const nextConfig = {
   experimental: {
     turbo: {
       resolveAlias: {
-        '@repo/ui': '../../packages/ui/src',
+        '@repo/ui': '../../packages/ui/dist',
       },
     },
   },
+  transpilePackages: ['@repo/ui'],
 };
 
 export default nextConfig;
