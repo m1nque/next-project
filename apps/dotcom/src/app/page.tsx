@@ -76,7 +76,7 @@ export default function Home() {
       title: "서머타임은 과연 과학적일까",
       author: "강석기의 과학카페",
       imageUrl: "https://image.dongascience.com/Photo/2025/08/17550697833486.png",
-      excerpt: "일광절약시간제의 과학적 근거와 효과에 대한 ���석"
+      excerpt: "일광절약시간제의 과��적 근거와 효과에 대한 분석"
     },
     {
       title: "매머드 털 가진 털북숭이 생쥐의 진실",
@@ -105,8 +105,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 md:pb-8">
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 md:pb-8 pt-16 md:pt-20">
         {/* Hero Section */}
         <section className="py-6">
           <div className="mb-6">
