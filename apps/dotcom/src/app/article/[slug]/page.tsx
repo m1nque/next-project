@@ -48,7 +48,7 @@ const articles: Record<string, ArticleData> = {
         </p>
 
         <p class="text-lg leading-relaxed">
-          12일 뉴욕타임스에 따르면 다니엘 J. 에크 미국 어바나-샴페인 일리노이대 통계학과 교수 연구팀이 
+          12일 뉴욕타임스에 따르면 다니엘 J. 에크 미국 어바나-샴페인 일��노이대 통계학과 교수 연구팀이 
           지난 10년간 역대 최고 야구 선수를 찾기 위한 통계 연구를 진행하고 새로운 통계 모델을 고안했다. 
           연도별 상황을 고려해 야구 인재들의 순위를 매길 수 있는 모델이다.
         </p>
@@ -75,7 +75,7 @@ const articles: Record<string, ArticleData> = {
         <p class="text-lg leading-relaxed">
           연구팀은 선수들의 업적을 제대로 평가하려면 WAR만으로는 부족하고 인종 차별, 전쟁, 부상 등 
           다양한 상황들을 함께 고려해야 한다고 설명했다. 세월의 흐름과 함께 훈련 기술이 발달한다는 점, 
-          영양 상태가 개선된다는 점도 ���려해야 할 사항이다.
+          영양 상태가 개선된다는 점도 고려해야 할 사항이다.
         </p>
 
         <p class="text-lg leading-relaxed">
@@ -211,6 +211,9 @@ export default function ArticlePage({ params }: ArticlePageProps) {
               </Link>
             </div>
           </div>
+
+          {/* Related Articles - CSR Component */}
+          <RelatedArticles articleId={article.id} className="mb-8" />
 
           {/* Author Info */}
           <div className="bg-gray-50 rounded-lg p-6">
