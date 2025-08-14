@@ -56,7 +56,7 @@ const articles: Record<string, ArticleData> = {
         <p class="text-lg leading-relaxed">
           연구팀의 통계 모델에 따르면 역대 최고 야구 선수 타이틀은 배리 본즈가 차지했다. 
           2위는 보스턴 레드삭스와 뉴욕 양키스에서 투수로 활약한 로저 클레멘스다. 
-          본즈의 대부이자 샌프란시스코 자이언츠 중견수���던 윌리 메이스가 3위, 베이브 루스는 4위를 차지했다.
+          본즈의 대부이자 샌프란시스코 자이언츠 중견수였던 윌리 메이스가 3위, 베이브 루스는 4위를 차지했다.
         </p>
 
         <p class="text-lg leading-relaxed">
@@ -74,7 +74,7 @@ const articles: Record<string, ArticleData> = {
 
         <p class="text-lg leading-relaxed">
           연구팀은 선수들의 업적을 제대로 평가하려면 WAR만으로는 부족하고 인종 차별, 전쟁, 부상 등 
-          다양한 상황들을 함께 고려해야 한다고 설명했다. 세월의 흐름과 함께 훈련 기술이 발달��다는 점, 
+          다양한 상황들을 함께 고려해야 한다고 설명했다. 세월의 흐름과 함께 훈련 기술이 발달한다는 점, 
           영양 상태가 개선된다는 점도 고려해야 할 사항이다.
         </p>
 
@@ -115,7 +115,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     return (
       <div className="min-h-screen bg-gray-50">
         <Header />
-        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pt-20 md:pt-24">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">기사를 찾을 수 없습니다</h1>
             <Link href="/" className="text-blue-600 hover:text-blue-700">
