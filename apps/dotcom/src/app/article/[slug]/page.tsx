@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../../components/Header'
 import BottomNav from '../../../components/BottomNav'
+import RelatedArticles from '../../../components/RelatedArticles'
 
 interface ArticleData {
   id: string
@@ -55,7 +56,7 @@ const articles: Record<string, ArticleData> = {
         <p class="text-lg leading-relaxed">
           연구팀의 통계 모델에 따르면 역대 최고 야구 선수 타이틀은 배리 본즈가 차지했다. 
           2위는 보스턴 레드삭스와 뉴욕 양키스에서 투수로 활약한 로저 클레멘스다. 
-          본즈의 대부이자 샌프란시스코 자이언츠 중견수였던 윌리 메이스가 3위, 베이브 루스는 4위를 차지했다.
+          본즈의 대부이자 샌프란시스코 자이언츠 중견수���던 윌리 메이스가 3위, 베이브 루스는 4위를 차지했다.
         </p>
 
         <p class="text-lg leading-relaxed">
@@ -68,12 +69,12 @@ const articles: Record<string, ArticleData> = {
         <p class="text-lg leading-relaxed">
           연구팀의 통계 모델은 야구 선수의 활약도를 평가하는 척도인 '대체 선수 대비 승리 기여도(WAR)'를 
           출발점으로 삼았다. WAR은 지명 타자, 숙련된 유격수, 직구가 뛰어난 마무리 투수 등 
-          특정 연�� 팀에 기여한 선수들을 평가한다.
+          특정 연도 팀에 기여한 선수들을 평가한다.
         </p>
 
         <p class="text-lg leading-relaxed">
           연구팀은 선수들의 업적을 제대로 평가하려면 WAR만으로는 부족하고 인종 차별, 전쟁, 부상 등 
-          다양한 상황들을 함께 고려해야 한다고 설명했다. 세월의 흐름과 함께 훈련 기술이 발달한다는 점, 
+          다양한 상황들을 함께 고려해야 한다고 설명했다. 세월의 흐름과 함께 훈련 기술이 발달��다는 점, 
           영양 상태가 개선된다는 점도 고려해야 할 사항이다.
         </p>
 
