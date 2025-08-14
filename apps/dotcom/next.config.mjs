@@ -30,6 +30,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'auth.dongascience.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'nextjs.org',
         port: '',
         pathname: '/**',
